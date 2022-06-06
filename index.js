@@ -20,6 +20,9 @@ class Polygon {
 }
 
 class Triangle {
+  constructor(sidesArray) {
+    super(sidesArray);
+  }
   get isValid() {
     // The sum of the lengths of any two sides of a triangle is greater than the length of the third side.
     // If you take the three sides of a triangle and add them in pairs, the sum is greater than (not equal to) the third side.
@@ -41,6 +44,9 @@ class Triangle {
 }
 
 class Square extends Polygon {
+  constructor(sidesArray) {
+    super(sidesArray);
+  }
   get isValid() {
     // A square is valid when the lengths of all sides are equal.
     if (sidesArray[0] === sidesArray[1] === sidesArray[2] === sidesArray[3]) {
